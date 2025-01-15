@@ -12,7 +12,7 @@
 - [API Documentation!](https://github.com/abanoubmamdouhhanna/EcommerceApp-Backend#-api-documentation)
 - [Usage](#usage)
 - [Deployment!](https://github.com/abanoubmamdouhhanna/EcommerceApp-Backend#-deployment)
-- [Contribute!](https://github.com/abanoubmamdouhhanna/EcommerceApp-Backend#-contribute)
+- [Contributing!](https://github.com/abanoubmamdouhhanna/EcommerceApp-Backend#-Contributing)
 - [Licence!](https://github.com/abanoubmamdouhhanna/EcommerceApp-Backend#-licence)
 - [Author](https://github.com/abanoubmamdouhhanna/EcommerceApp-Backend#-Author)
 
