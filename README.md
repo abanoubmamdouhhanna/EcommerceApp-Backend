@@ -11,9 +11,10 @@
   - [Running the Application](#running-the-application)
 - [API Documentation!](https://github.com/abanoubmamdouhhanna/EcommerceApp-Backend#-api-documentation)
 - [Usage](#usage)
-- [Contributing](#contributing)
-- [License](#license)
-- [Contact](#contact)
+- [Deployment!](https://github.com/abanoubmamdouhhanna/EcommerceApp-Backend#-deployment)
+- [Contribute!](https://github.com/abanoubmamdouhhanna/EcommerceApp-Backend#-contribute)
+- [Licence!](https://github.com/abanoubmamdouhhanna/EcommerceApp-Backend#-licence)
+- [Author](https://github.com/abanoubmamdouhhanna/EcommerceApp-Backend#-Author)
 
 ## About the Project
 
