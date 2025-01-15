@@ -1,10 +1,8 @@
-# Ecommerce Backend
-
 
 <div align="center">
-<h1>Social-Backend-Api</h1>
+<h1>EcommerceApp-Backend-Api</h1>
 
-![image](https://i.imgur.com/ZKXUbGG.png)
+![image](https://imgur.com/f5S2CBX.png)
 </div>
 
 
@@ -17,7 +15,6 @@
   - [Prerequisites](#prerequisites)
   - [Installation](#installation)
   - [Running the Application](#running-the-application)
-    - 
 - [API Documentation!](https://github.com/abanoubmamdouhhanna/EcommerceApp-Backend#-api-documentation)
 - [Usage](#usage)
 - [Deployment!](https://github.com/abanoubmamdouhhanna/EcommerceApp-Backend#-deployment)
