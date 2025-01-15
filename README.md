@@ -126,7 +126,7 @@ Ensure you have the following installed on your machine:
 
 ### Running the Application
 
-   <h2>1. Set up environment variables by creating a `.env` file in the root directory. Refer to `.env.example` for required variables.</h2>
+   <h3>1. Set up environment variables</h3>
 
 > Note: **environment variables(.env) located into config file**
 
@@ -167,7 +167,7 @@ However, some security experts recommend using a higher number of salt rounds
 > ![image](https://i.imgur.com/9TndYUV.png)
 - Replace `ABSTRACT_API_KEY` with  your own api key through [URL](https://www.abstractapi.com/api/ip-geolocation-api)
 
-<h2>2. Start the server</h2>
+<h3>2. Start the server</h3>
 
 ```
 nodemon [your node app]  or  nodemon
