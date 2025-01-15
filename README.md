@@ -2,7 +2,7 @@
 <div align="center">
 <h1>EcommerceApp-Backend-Api</h1>
 
-![image](https://imgur.com/f5S2CBX.png)
+![image](https://imgur.com/hmZxyEG.jpg)
 </div>
 
 
@@ -298,7 +298,7 @@ This project is licensed under the [MIT License](https://opensource.org/licenses
 
 ## 👨‍💻 Author
 
-Abanoub Mamdouh -
+Abanoub Mamdouh
 <p>✉️ You can contact me at <a href="mailto:abanoubmamdouhhanna@outlook.com">abanoubmamdouhhanna@outlook.com</a></p>
 
 Project Link: [https://github.com/abanoubmamdouhhanna/Ecommerce-Backend](https://github.com/abanoubmamdouhhanna/Ecommerce-Backend)
