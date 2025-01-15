@@ -1,0 +1,1035 @@
+{
+	"info": {
+		"_postman_id": "ac0a3c3b-04dd-4594-ab8f-929cf8fa8883",
+		"name": "E-commerce",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "24549496"
+	},
+	"item": [
+		{
+			"name": "Auth",
+			"item": [
+				{
+					"name": "register",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"userName\": \"bebo\",\r\n    \"email\": \"beboabanoub332001@gmail.com\",\r\n    \"password\": \"Bebo@123\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/auth/register",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"auth",
+								"register"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "login",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"userName\": \"bebo\",\r\n    \"email\": \"beboabanoub332001@gmail.com\",\r\n    \"password\": \"Bebo@123\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/auth/login",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"auth",
+								"login"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "forget password",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": ""
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "reset password",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"password\":\"Beboabanoub@123\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/auth/resetPassword/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImJlYm9hYmFub3ViMzMyMDAxQG91dGxvb2suY29tIiwidXNlcklkIjoiNjQxZjRlZDdmYmZhYjE2Zjk1MjBiNGM0IiwiaWF0IjoxNjc5ODA2NDQ2fQ.uX2YdQkAhX7xZugXJqIIS9WyaFbMnvsCXie__bWLbQA",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"auth",
+								"resetPassword",
+								"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImJlYm9hYmFub3ViMzMyMDAxQG91dGxvb2suY29tIiwidXNlcklkIjoiNjQxZjRlZDdmYmZhYjE2Zjk1MjBiNGM0IiwiaWF0IjoxNjc5ODA2NDQ2fQ.uX2YdQkAhX7xZugXJqIIS9WyaFbMnvsCXie__bWLbQA"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "forget Password OTP",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": ""
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "reset Password OTP",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/auth/resetPasswordOTP/beboabanoub332001@gmail.com",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"auth",
+								"resetPasswordOTP",
+								"beboabanoub332001@gmail.com"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "reActivateAcc",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:5000/auth/newConfirm/beboabanoub332001@gmail.com",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"auth",
+								"newConfirm",
+								"beboabanoub332001@gmail.com"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "User",
+			"item": [
+				{
+					"name": "update user",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "authorization",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY0MjNkZTg4MmQwZTEyMzc2YmMyYmYxMyIsInVzZXJfbmFtZSI6ImFiYW5vdWIiLCJlbWFpbCI6ImJlYm9hYmFub3ViMzMyMDAxQG91dGxvb2suY29tIiwiaWF0IjoxNjgwMDc3MzEyfQ.bt1JWw4F4ilPfpohtPTVnH3SQHQDoZu1U9o_QKK5jcI",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"age\":23\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/user/updateUser",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"user",
+								"updateUser"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "update password",
+					"request": {
+						"method": "PATCH",
+						"header": [
+							{
+								"key": "authorization",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY0MjIxOTYwNWVmZGZlZTE0MTExNWE3MyIsInVzZXJfbmFtZSI6ImFiYW5vdWIiLCJlbWFpbCI6ImJlYm9hYmFub3ViMzMyMDAxQG91dGxvb2suY29tIiwiaWF0IjoxNjc5OTk3MTA4fQ.XO0ps1Qq8jxbaXyiPFCiDuNIChJqseP3fvZVTW5xyns",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"oldPassword\":\"\",\r\n    \"newPassword\":\"\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/user/changePassword",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"user",
+								"changePassword"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "delete user",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "authorization",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY0MjM4MWYwOWU4ZjY5MDljMDFjODVlMSIsInVzZXJfbmFtZSI6ImFiYW5vdWIiLCJlbWFpbCI6ImJlYm9hYmFub3ViMzMyMDAxQG91dGxvb2suY29tIiwiaWF0IjoxNjgwMDQ4NzU0fQ.BvTgZqntTXsrgSYiKNp6GCPp6Ws3NkDWv4pnYTyefag",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://localhost:3000/user/deleteUser",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"user",
+								"deleteUser"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "reactive account",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "authorization",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY0MjM4MWYwOWU4ZjY5MDljMDFjODVlMSIsInVzZXJfbmFtZSI6ImFiYW5vdWIiLCJlbWFpbCI6ImJlYm9hYmFub3ViMzMyMDAxQG91dGxvb2suY29tIiwiaWF0IjoxNjgwMDQ4NzU0fQ.BvTgZqntTXsrgSYiKNp6GCPp6Ws3NkDWv4pnYTyefag",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://localhost:3000/user/accountRecovery/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImJlYm9hYmFub3ViMzMyMDAxQG91dGxvb2suY29tIiwiaWF0IjoxNjgwMDQ3NTkzfQ.fSVblIbV6m-MuWKSKbCuMAUbVI0WnEW0vJrm5dpkBgo",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"user",
+								"accountRecovery",
+								"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImJlYm9hYmFub3ViMzMyMDAxQG91dGxvb2suY29tIiwiaWF0IjoxNjgwMDQ3NTkzfQ.fSVblIbV6m-MuWKSKbCuMAUbVI0WnEW0vJrm5dpkBgo"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "upload Profile Pic",
+					"request": {
+						"method": "PATCH",
+						"header": [
+							{
+								"key": "authorization",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY0MjM4MWYwOWU4ZjY5MDljMDFjODVlMSIsInVzZXJfbmFtZSI6ImFiYW5vdWIiLCJlbWFpbCI6ImJlYm9hYmFub3ViMzMyMDAxQG91dGxvb2suY29tIiwiaWF0IjoxNjgwMDUyMTcyfQ.M-Iz4hG476ZEiLNdIN0b7o-uVoU8TX8s7548_XPT9Wc",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "profile",
+									"type": "file",
+									"src": "/D:/CFC/Fries7.png"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:3000/user/uploadProfilePic",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"user",
+								"uploadProfilePic"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "upload cover Pic",
+					"request": {
+						"method": "PATCH",
+						"header": [],
+						"url": {
+							"raw": ""
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "user Profile",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": ""
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Category",
+			"item": [
+				{
+					"name": "create category",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "authorization",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY0MmE1YWU3MDk1MTAxM2NhMjY1MGJlMiIsInVzZXJfbmFtZSI6ImFiYW5vdWIiLCJlbWFpbCI6ImJlYm9hYmFub3ViMzMyMDAxQG91dGxvb2suY29tIiwiaWF0IjoxNjgwNDk3NDA3fQ.6VdUfNe4cm2oJWhWjuGXw4bip0fHqXg6TEwLXc0GUpk",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "name",
+									"value": "wuwuwuwq",
+									"type": "text"
+								},
+								{
+									"key": "categoryImage",
+									"type": "file",
+									"src": "/D:/E-commerce images/Women's Fashion.png"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:3000/category/createCategory",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"category",
+								"createCategory"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "update category",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"url": {
+							"raw": ""
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get categories",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": ""
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Subcategory",
+			"item": [
+				{
+					"name": "create subcategory",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "authorization",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY0MmE1YWU3MDk1MTAxM2NhMjY1MGJlMiIsInVzZXJfbmFtZSI6ImFiYW5vdWIiLCJlbWFpbCI6ImJlYm9hYmFub3ViMzMyMDAxQG91dGxvb2suY29tIiwiaWF0IjoxNjgwNDk3NDA3fQ.6VdUfNe4cm2oJWhWjuGXw4bip0fHqXg6TEwLXc0GUpk",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "name",
+									"value": "sub3",
+									"type": "text"
+								},
+								{
+									"key": "subcategoryImage",
+									"type": "file",
+									"src": "/D:/E-commerce images/Mobiles.png"
+								},
+								{
+									"key": "",
+									"value": "",
+									"type": "text",
+									"disabled": true
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:3000/category/642a5b300951013ca2650be9/subcategory/createSubcategory",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"category",
+								"642a5b300951013ca2650be9",
+								"subcategory",
+								"createSubcategory"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "update subcategory",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"url": {
+							"raw": ""
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get subcategories",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": ""
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Coupon",
+			"item": [
+				{
+					"name": "Create coupon",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "authorization",
+								"value": "",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://localhost:3000/coupon/createCoupon",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"coupon",
+								"createCoupon"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "update coupon",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "authorization",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY0MmE1YWU3MDk1MTAxM2NhMjY1MGJlMiIsInVzZXJfbmFtZSI6ImFiYW5vdWIiLCJlbWFpbCI6ImJlYm9hYmFub3ViMzMyMDAxQG91dGxvb2suY29tIiwiaWF0IjoxNjgwNDk3NDA3fQ.6VdUfNe4cm2oJWhWjuGXw4bip0fHqXg6TEwLXc0GUpk",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "name",
+									"value": "c133",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:3000/coupon/updateCoupon/642a7eccca4b65e5ac8ce193",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"coupon",
+								"updateCoupon",
+								"642a7eccca4b65e5ac8ce193"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get coupons",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": ""
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Brand",
+			"item": [
+				{
+					"name": "Create brand",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "authorization",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY0MmE1YWU3MDk1MTAxM2NhMjY1MGJlMiIsInVzZXJfbmFtZSI6ImFiYW5vdWIiLCJlbWFpbCI6ImJlYm9hYmFub3ViMzMyMDAxQG91dGxvb2suY29tIiwiaWF0IjoxNjgwOTY3ODA4fQ.AqrMmnALrkyXgZmvPXdSpvMv8_NfWWC27Z_iARmTdB0",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "name",
+									"value": "sam",
+									"type": "text"
+								},
+								{
+									"key": "brandImage",
+									"type": "file",
+									"src": "/D:/E-commerce images/Mobiles.png"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:3000/brand/createBrand",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"brand",
+								"createBrand"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get brands",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "authorization",
+								"value": "",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://localhost:3000/brand/getBrands",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"brand",
+								"getBrands"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "update brand",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "authorization",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY0MmE1YWU3MDk1MTAxM2NhMjY1MGJlMiIsInVzZXJfbmFtZSI6ImFiYW5vdWIiLCJlbWFpbCI6ImJlYm9hYmFub3ViMzMyMDAxQG91dGxvb2suY29tIiwiaWF0IjoxNjgwNDk3NDA3fQ.6VdUfNe4cm2oJWhWjuGXw4bip0fHqXg6TEwLXc0GUpk",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "",
+									"value": "",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "name",
+									"value": "lenovo2",
+									"type": "text"
+								},
+								{
+									"key": "brandImage",
+									"type": "file",
+									"src": []
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:3000/brand/updateBrand/642aa20ddd24284dc3a77839",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"brand",
+								"updateBrand",
+								"642aa20ddd24284dc3a77839"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Product",
+			"item": [
+				{
+					"name": "create product",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": ""
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "update product",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": ""
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "addToWishlist",
+					"request": {
+						"method": "PATCH",
+						"header": [
+							{
+								"key": "authorization",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY0MmE1YWU3MDk1MTAxM2NhMjY1MGJlMiIsInVzZXJfbmFtZSI6ImFiYW5vdWIiLCJlbWFpbCI6ImJlYm9hYmFub3ViMzMyMDAxQG91dGxvb2suY29tIiwiaWF0IjoxNjgxMzAxNzA1fQ.5u1PpHHBLrN5UAGoHrcvlUGTi0CzFOFWgutzEW4A-iI",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://localhost:3000/product/wishlist/6432c76648855ee5fd839348",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"product",
+								"wishlist",
+								"6432c76648855ee5fd839348"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "removeFromWishlist",
+					"request": {
+						"method": "PATCH",
+						"header": [
+							{
+								"key": "authorization",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY0MmE1YWU3MDk1MTAxM2NhMjY1MGJlMiIsInVzZXJfbmFtZSI6ImFiYW5vdWIiLCJlbWFpbCI6ImJlYm9hYmFub3ViMzMyMDAxQG91dGxvb2suY29tIiwiaWF0IjoxNjgxMzAxNzA1fQ.5u1PpHHBLrN5UAGoHrcvlUGTi0CzFOFWgutzEW4A-iI",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://localhost:3000/product/wishlist/6432c76648855ee5fd839348",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"product",
+								"wishlist",
+								"6432c76648855ee5fd839348"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Cart",
+			"item": [
+				{
+					"name": "add to cart",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "authorization",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY0MmE1YWU3MDk1MTAxM2NhMjY1MGJlMiIsInVzZXJfbmFtZSI6ImFiYW5vdWIiLCJlbWFpbCI6ImJlYm9hYmFub3ViMzMyMDAxQG91dGxvb2suY29tIiwiaWF0IjoxNjgxMDQ3MzY2fQ.Li5tYMW2TJOv9YMkFd0_Ejt4yv67VyOxNwoLCYOWpFs",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"productId\": \"6432c88a12e44b40eb639d7f\",\r\n    \"quantity\": 1\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/Cart/addToCart",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"Cart",
+								"addToCart"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "clear cart",
+					"request": {
+						"method": "PATCH",
+						"header": [
+							{
+								"key": "authorization",
+								"value": "",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://localhost:3000/Cart/clearCart",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"Cart",
+								"clearCart"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "clear cart item",
+					"request": {
+						"method": "PATCH",
+						"header": [
+							{
+								"key": "authorization",
+								"value": "",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://localhost:3000/Cart/clearCart",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"Cart",
+								"clearCart"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Order",
+			"item": [
+				{
+					"name": "Create Order",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "authorization",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY0MmE1YWU3MDk1MTAxM2NhMjY1MGJlMiIsInVzZXJfbmFtZSI6ImFiYW5vdWIiLCJlbWFpbCI6ImJlYm9hYmFub3ViMzMyMDAxQG91dGxvb2suY29tIiwiaWF0IjoxNjgxMzAxNzA1fQ.5u1PpHHBLrN5UAGoHrcvlUGTi0CzFOFWgutzEW4A-iI",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"products\": [\r\n        {\r\n            \"productId\": \"6432bfef2cfe67b318b50b34\",\r\n            \"quantity\": 5\r\n        }\r\n    ],\r\n    \"address\": \"21 st. masged el-rhman ,cairo\",\r\n    \"phone\": [\r\n        \"01203784410\"\r\n    ],\r\n    \"paymentType\": \"COD\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/order/createOrder",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"order",
+								"createOrder"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "cancel order",
+					"request": {
+						"method": "PATCH",
+						"header": [],
+						"url": {
+							"raw": ""
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "delivered Order",
+					"request": {
+						"method": "PATCH",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/order/6438884cc03c04db5b99f5aa/delivered",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"order",
+								"6438884cc03c04db5b99f5aa",
+								"delivered"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Reviews",
+			"item": [
+				{
+					"name": "create review",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "authorization",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY0MmE1YWU3MDk1MTAxM2NhMjY1MGJlMiIsInVzZXJfbmFtZSI6ImFiYW5vdWIiLCJlbWFpbCI6ImJlYm9hYmFub3ViMzMyMDAxQG91dGxvb2suY29tIiwiaWF0IjoxNjgxNjU4NTgzfQ.9mblp8L0sj9t48gMaeXuzz9xx_AAi6LTZ7dhYs5ZcOk",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"comment\":\"Good\",\r\n    \"rating\":3.5\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/product/6432bfef2cfe67b318b50b34/reviews/createReview",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"product",
+								"6432bfef2cfe67b318b50b34",
+								"reviews",
+								"createReview"
+							],
+							"query": [
+								{
+									"key": "",
+									"value": null,
+									"disabled": true
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "update review",
+					"request": {
+						"method": "PATCH",
+						"header": [
+							{
+								"key": "authorization",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY0MmE1YWU3MDk1MTAxM2NhMjY1MGJlMiIsInVzZXJfbmFtZSI6ImFiYW5vdWIiLCJlbWFpbCI6ImJlYm9hYmFub3ViMzMyMDAxQG91dGxvb2suY29tIiwiaWF0IjoxNjgxNjU4NTgzfQ.9mblp8L0sj9t48gMaeXuzz9xx_AAi6LTZ7dhYs5ZcOk",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"comment\":\"Good\",\r\n    \"rating\":3.5\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/product/6432bfef2cfe67b318b50b34/reviews/updateReview/",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"product",
+								"6432bfef2cfe67b318b50b34",
+								"reviews",
+								"updateReview",
+								""
+							],
+							"query": [
+								{
+									"key": "",
+									"value": null,
+									"disabled": true
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
