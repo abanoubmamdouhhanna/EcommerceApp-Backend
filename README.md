@@ -301,5 +301,5 @@ This project is licensed under the [MIT License](https://opensource.org/licenses
 Abanoub Mamdouh
 <p>✉️ You can contact me at <a href="mailto:abanoubmamdouhhanna@outlook.com">abanoubmamdouhhanna@outlook.com</a></p>
 
-Project Link: [https://github.com/abanoubmamdouhhanna/Ecommerce-Backend](https://github.com/abanoubmamdouhhanna/Ecommerce-Backend)
+Project Link: [https://github.com/abanoubmamdouhhanna/Ecommerce-Backend](https://github.com/abanoubmamdouhhanna/EcommerceApp-Backend)
 
