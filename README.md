@@ -252,7 +252,7 @@ node -v
 
 - Once you reach here, **congratulations!** You deployed your project successfully.
 
-![image](https://imgur.com/a/lWMuspv.png)
+![image](https://imgur.com/lI14ck8.png)
   
 - Finally, you need to do the last important thing: add environment variables to your project through these steps .
 
